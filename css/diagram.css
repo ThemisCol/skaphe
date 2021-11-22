@@ -227,8 +227,231 @@
 
 }
 
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { 
+/*XX-Large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) and (max-width: 1919px) { 
+    
+    .cicle_background{
+        background-image: url('../img/cicle_background.svg');
+        height: 643px;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    
+    .data-d{
+        max-width: 30rem;
+    }
+
+    .element-1{
+        z-index: 2;
+        position: absolute;
+        top: 122px;
+        left: 245px;
+    }
+
+    .element-2{
+        z-index: 2;
+        position: absolute;
+        top: 276px;
+        left: 423px;
+    }
+
+    .element-3{
+        z-index: 2;
+        position: absolute;
+        top: 433px;
+        left: 370px;
+    }
+
+    .element-4{
+        z-index: 2;
+        position: absolute;
+        top: 433px;
+        left: 86px;
+    }
+
+    .element-5{
+        z-index: 2;
+        position: absolute;
+        top: 276px;
+        left: 50px;
+    }
+
+    .element-1-label{
+        z-index: 2;
+        position: absolute;
+        top: 102px;
+        left: 274px;
+    }
+
+    .element-2-label{
+        z-index: 2;
+        position: absolute;
+        top: 255px;
+        left: 455px;
+    }
+
+    .element-3-label{
+        z-index: 2;
+        position: absolute;
+        top: 413px;
+        left: 400px;
+    }
+
+    .element-4-label{
+        z-index: 2;
+        position: absolute;
+        top: 413px;
+        left: 125px;
+    }
+
+    .element-5-label{
+        z-index: 2;
+        position: absolute;
+        top: 255px;
+        left: 83px;
+    }
+
+    .menu-dot-1{
+        z-index: 2;
+        position: absolute;
+        top: 62px;
+        left: 432px;
+    }
+
+    .menu-dot-2{
+        z-index: 2;
+        position: absolute;
+        top: 137px;
+        left: 495px;
+    }
+
+    .menu-dot-3{
+        z-index: 2;
+        position: absolute;
+        top: 224px;
+        left: 532px;
+    }
+
+    .menu-dot-4{
+        z-index: 2;
+        position: absolute;
+        top: 323px;
+        left: 534px;
+    }
+
+    .menu-dot-5{
+        z-index: 2;
+        position: absolute;
+        top: 415px;
+        left: 502px;
+    }
+
+    .menu-dot-6{
+        z-index: 2;
+        position: absolute;
+        top: 496px;
+        left: 440px;
+    }
+
+    .menu-text{
+        font-weight: 600;
+        color: #2b5251;
+        padding: 0;
+        margin: 0;
+        font-size: .85rem;
+        max-width: 280px;
+    }
+
+    .menu-text-1{
+        z-index: 2;
+        position: absolute;
+        top: 90px;
+        left: 484px;
+    }
+
+    .menu-text-2{
+        z-index: 2;
+        position: absolute;
+        top: 165px;
+        left: 550px;
+    }
+
+    .menu-text-3{
+        z-index: 2;
+        position: absolute;
+        top: 252px;
+        left: 587px;
+    }
+
+    .menu-text-4{
+        z-index: 2;
+        position: absolute;
+        top: 352px;
+        left: 589px;
+    }
+
+    .menu-text-5{
+        z-index: 2;
+        position: absolute;
+        top: 443px;
+        left: 555px;
+    }
+
+    .menu-text-6{
+        z-index: 2;
+        position: absolute;
+        top: 526px;
+        left: 498px;
+    }
+
+    .btn-d{
+        display:inline-block;
+        font-weight:400;
+        line-height:1.5;
+        color:#212529;
+        text-align:center;
+        text-decoration:none;
+        vertical-align:middle;
+        cursor:pointer;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        user-select:none;
+        background-color:transparent;
+        border:1px solid transparent;
+        padding:.15rem .5rem;
+        font-size: .85rem;
+        border-radius:.80rem .0rem .80rem .0rem;
+        transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    }
+
+    .data-title-d{
+        color: #2b5251;
+    }
+
+    .cursor{
+        cursor:pointer;
+        cursor: hand
+    }
+
+    .nav-link-d{
+        display:block;
+    }
+
+    .nav-link-d:focus,.nav-link-d:hover{
+        color: #bcd601 !important;
+        text-decoration:none
+    }
+
+    .element-label{
+        color: #2b5251;
+        font-weight: 600;
+        font-size: .75rem;
+    }
+
+}
+
+/*XXX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1920px) { 
     .cicle_background{
         background-image: url('../img/cicle_background.svg');
         height: 753px;
