@@ -6,9 +6,10 @@
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+    
     .cicle_background{
         background-image: url('../img/cicle_background.svg');
-        height: 753px;
+        height: 543px;
         background-repeat: no-repeat;
         z-index: 1;
     }
@@ -20,114 +21,113 @@
     .element-1{
         z-index: 2;
         position: absolute;
-        top: 140px;
-        left: 285px;
+        top: 100px;
+        left: 208px;
     }
 
     .element-2{
         z-index: 2;
         position: absolute;
-        top: 330px;
-        left: 500px;
+        top: 230px;
+        left: 355px;
     }
 
     .element-3{
         z-index: 2;
         position: absolute;
-        top: 525px;
-        left: 425px;
+        top: 365px;
+        left: 300px;
     }
 
     .element-4{
         z-index: 2;
         position: absolute;
-        top: 525px;
-        left: 120px;
+        top: 365px;
+        left: 62px;
     }
 
     .element-5{
         z-index: 2;
         position: absolute;
-        top: 330px;
-        left: 55px;
+        top: 230px;
+        left: 38px;
     }
 
     .element-1-label{
         z-index: 2;
         position: absolute;
-        top: 115px;
-        left: 321px;
+        top: 80px;
+        left: 236px;
     }
 
     .element-2-label{
         z-index: 2;
         position: absolute;
-        top: 305px;
-        left: 537px;
+        top: 209px;
+        left: 383px;
     }
 
     .element-3-label{
         z-index: 2;
         position: absolute;
-        top: 500px;
-        left: 467px;
+        top: 343px;
+        left: 334px;
     }
 
     .element-4-label{
         z-index: 2;
         position: absolute;
-        top: 500px;
-        left: 172px;
+        top: 343px;
+        left: 100px;
     }
 
     .element-5-label{
         z-index: 2;
         position: absolute;
-        top: 305px;
-        left: 100px;
+        top: 209px;
+        left: 69px;
     }
 
     .menu-dot-1{
         z-index: 2;
         position: absolute;
-        top: 82px;
-        left: 516px;
+        top: 50px;
+        left: 360px;
     }
 
     .menu-dot-2{
         z-index: 2;
         position: absolute;
-        top: 174px;
-        left: 591px;
+        top: 112px;
+        left: 414px;
     }
 
     .menu-dot-3{
         z-index: 2;
         position: absolute;
-        top: 274px;
-        left: 631px;
+        top: 188px;
+        left: 445px;
     }
 
     .menu-dot-4{
         z-index: 2;
         position: absolute;
-        top: 375px;
-        left: 636px;
+        top: 272px;
+        left: 445px;
     }
-
 
     .menu-dot-5{
         z-index: 2;
         position: absolute;
-        top: 474px;
-        left: 605px;
+        top: 348px;
+        left: 415px;
     }
 
     .menu-dot-6{
         z-index: 2;
         position: absolute;
-        top: 586px;
-        left: 525px;
+        top: 410px;
+        left: 368px;
     }
 
     .menu-text{
@@ -135,49 +135,50 @@
         color: #2b5251;
         padding: 0;
         margin: 0;
+        font-size: .85rem;
         max-width: 280px;
     }
 
     .menu-text-1{
         z-index: 2;
         position: absolute;
-        top: 110px;
-        left: 580px;
+        top: 68px;
+        left: 400px;
     }
 
     .menu-text-2{
         z-index: 2;
         position: absolute;
-        top: 200px;
-        left: 650px;
+        top: 130px;
+        left: 452px;
     }
 
     .menu-text-3{
         z-index: 2;
         position: absolute;
-        top: 300px;
-        left: 688px;
+        top: 208px;
+        left: 485px;
     }
 
     .menu-text-4{
         z-index: 2;
         position: absolute;
-        top: 402px;
-        left: 691px;
+        top: 293px;
+        left: 485px;
     }
 
     .menu-text-5{
         z-index: 2;
         position: absolute;
-        top: 500px;
-        left: 660px;
+        top: 368px;
+        left: 453px;
     }
 
     .menu-text-6{
         z-index: 2;
         position: absolute;
-        top: 613px;
-        left: 585px;
+        top: 432px;
+        left: 410px;
     }
 
     .btn-d{
@@ -194,8 +195,8 @@
         user-select:none;
         background-color:transparent;
         border:1px solid transparent;
-        padding:.200rem .90rem;
-        font-size:1rem;
+        padding:.15rem .5rem;
+        font-size: .85rem;
         border-radius:.80rem .0rem .80rem .0rem;
         transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
     }
@@ -222,7 +223,7 @@
     .element-label{
         color: #2b5251;
         font-weight: 600;
-        font-size: .85rem;
+        font-size: .75rem;
     }
 
 }
