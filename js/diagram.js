@@ -11,11 +11,20 @@ $(document).ready(function() {
             $(`#element-${index+1}-label`).html(dataDiagram[index].step);
             $(`#element-${index+1}`).html(dataDiagram[index].name);
         }
+
+        $(`#diagram-name`).html(InfoDiagram[0].name);
+        $(`#diagram-subtitle`).html(InfoDiagram[0].subtitle);
+        $(`#diagram-center`).html(InfoDiagram[0].center);
     }
 
     $(`button[id^='element-']`).click(function(e) {
         removeClassAll();
         selected = e.target.id.substr(-1);
+        if(selected == 5){
+            $('.cicle_background').css({'background-image': `url('./img/cicle_background_active.svg')`}); 
+        }else{
+            $('.cicle_background').css({'background-image': `url('./img/cicle_background.svg')`}); 
+        }
         $(`#element-${selected}`).addClass("active");
         for (let index = 0; index < dataDiagram[selected-1].steps.length; index++) {
             $(`#menu-dot-${index+1}`).html(dot);
@@ -32,6 +41,7 @@ $(document).ready(function() {
         $(`#title-d`).html(dataDiagram[selected-1].steps[item-1].name)
         $(`#text-d`).html(dataDiagram[selected-1].steps[item-1].text)
         $(`#img-d`).attr("src",dataDiagram[selected-1].steps[item-1].img);
+        //$('#img-d').css({'background-image': `url('${dataDiagram[selected-1].steps[item-1].img}')`}); 
 
     });
 
