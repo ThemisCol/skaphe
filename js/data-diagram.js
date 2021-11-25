@@ -1,3 +1,9 @@
+let InfoDiagram = [{
+    "name": "Aprendizaje para la innovación",
+    "subtitle" : "Manejo adaptativo",
+    "center": "Ciclo de proyecto",
+}];   
+
 let dataDiagram = [{
     "id": 1,
     "name": "Preparación",
@@ -19,7 +25,7 @@ let dataDiagram = [{
         {
             "id": 3,
             "name": "Análisis del marco legal",
-            "text": "Es la revisión de la legislación vigente y aplicable en materia de permisos, autorizaciones o cualquier otro tipo de requisito previo que debe articularse en la formulación de los proyectos de SbN, garantizando la factibilidad legal de las intervenciones. ",
+            "text": "Es la revisión de la legislación vigente y aplicable en materia de permisos, autorizaciones o cualquier otro tipo de requisito previo que debe articularse en la formulación de los proyectos de SbN, garantizando la factibilidad legal de las intervenciones.",
             "img" : "./img/01_C.jpg"
         },
         {
@@ -50,33 +56,27 @@ let dataDiagram = [{
         },
         {
             "id": 2,
-            "name": "Definición de mecanismos de participación",
+            "name": "Generación de mecanismos de participación y gobernanza",
             "text": "Proceso a través del cual se concertan y definen los procedimientos, canales e instancias de participación e interlocución para la toma de decisiones, como plataforma de gobernanza socio-institucional de la SbN.",
             "img" : "./img/02_B.jpg"
         },
         {
             "id": 3,
-            "name": "Estrategia de comunicación",
-            "text": "Es un componente fundamental dirigido a la comunicación del proyecto de Restaruación de bosques transversal a todo el ciclo de vida,  esto permitirá fortalecer la gobernanza, contribuir a la apropiación y sostenibilidad del proyecto.",
+            "name": "Definición de objetivos y metas",
+            "text": "Determina los resultados y cambios que se espera alcanzar con la ejecución de los proyectos al cumplir con la solución, construidos a partir de los desafíos socioecológicos identificados.",
             "img" : "./img/02_C.jpg"
         },
         {
             "id": 4,
-            "name": "Definición de objetivos y metas",
-            "text": "Determina los resultados y cambios que se espera alcanzar con la ejecución de los proyectos al cumplir con la solución, construidos a partir de los desafíos socioecológicos identificados.",
+            "name": "Valoración de beneficios y co-beneficios",
+            "text": "Establece toda la gama de beneficios socioecológicos, económicos y culturales que la SbN puede generar al territorio y su gente, a corto y largo plazo.",
             "img" : "./img/02_D.jpg"
         },
         {
             "id": 5,
-            "name": "Valoración de beneficios y co-beneficios",
-            "text": "Establece toda la gama de beneficios socioecológicos, económicos y culturales que la SbN puede generar al territorio y su gente, a corto y largo plazo.",
-            "img" : "./img/02_E.jpg"
-        },
-        {
-            "id": 6,
             "name": "Identificación de alternativas",
-            "text": "Proceso participativo que busca identificar el conjunto de técnicas, herramientas y estrategias potenciales para integrar la SbN, adecuadas al contexto territorial y los desafíos socioecológicos definidos.",
-            "img" : "./img/02_F.jpg"
+            "text": "Proceso participativo que busca identificar el conjunto de técnicas, herramientas y estrategias potenciales para integrar la SbN, adecuadas al contexto territorial y los desafíos socioecológicos definidos. ",
+            "img" : "./img/02_E.jpg"
         }
     ]
 },
@@ -107,13 +107,13 @@ let dataDiagram = [{
         {
             "id": 4,
             "name": "Construcción del sistema de monitoreo",
-            "text": "Es el protocolo que define la variables e indicadores para valorar el cumplimiento de los objetivos, resultados y beneficios esperados con la SbN, así como lo procedimientos para la captura de información y análisis participativo.",
+            "text": "Es el protocolo que define las variables, indicadores y KPIS para valorar el cumplimiento de los objetivos, resultados y beneficios esperados con la SbN, así como lo procedimientos para la captura de información y análisis participativo.",
             "img" : "./img/03_D.jpg"
         },
         {
             "id": 5,
-            "name": "Plan de acción y presupuesto",
-            "text": "Instrumento a través del cual se organizan y proyectan todas las actividades pre-operativas, operativas, de mantenimiento, monitoreo y evaluación de la SbN, y se especifica los costos y responsables, en el corto y largo plazo.",
+            "name": "Plan de acción, hitos y presupuesto",
+            "text": "Instrumentos a través del cuales se organizan y proyectan todas las actividades pre-operativas, operativas, de mantenimiento, monitoreo y evaluación de la SbN, y se especifica los costos, plan de comparas y responsables, en el corto y largo plazo. Define además, hitos o momentos claves a tener en cuenta en el proceso, para su respectivo seguimiento y verificación.",
             "img" : "./img/03_E.jpg"
         }
     ]
@@ -164,16 +164,16 @@ let dataDiagram = [{
         },
         {
             "id": 2,
+            "name": "Evaluación por terceras partes",
+            "text": "Este paso hace referencia a aquellos proyectos que requieren una verificación y evaluación de resultados por parte de revisores o auditorías externas y que debe contemplar elementos a tener en cuenta en el proceso.",
+            "img" : "./img/05_B.jpg"
+        },
+        {
+            "id": 3,
             "name": "Definición de propuestas de ajuste",
             "text": "Contempla la identificación de nuevas intervenciones o ajustes a los arreglos, diseños y/o estrategias que integra la SbN, para corregir fallas, al tiempo que potencia la experimentación e innovación social.",
-            "img" : "./img/05_B.jpg"
+            "img" : "./img/05_C.jpg"
         }
     ]
 }]
 
-let InfoDiagram = [{
-    "name": "Aprendizaje para la innovación",
-    "subtitle" : "Manejo adaptativo",
-    "center": "Ciclo de proyecto",
-
-}];   

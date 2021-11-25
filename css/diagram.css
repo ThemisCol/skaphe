@@ -162,7 +162,7 @@
         padding: 0;
         margin: 0;
         font-size: .85rem;
-        max-width: 280px;
+        max-width: 172px;
     }
 
     .menu-text-1{
@@ -751,10 +751,14 @@
 
 .img-d{
     object-fit: cover;
+    border: 10px solid #E3E2E6;
+    box-shadow: 0 0 0 10px #F1F1F1, 
+                0 0 0 10px #F1F1F1;
+    margin-bottom: 15px;
 }
 
 .active-selected{
-    color: #bcd601;
+    color: #bcd601 !important;
 }
 
 .noselect {

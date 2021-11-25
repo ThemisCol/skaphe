@@ -13,16 +13,18 @@ $(document).ready(function() {
         }
 
         $(`#diagram-name`).html(InfoDiagram[0].name);
-        $(`#diagram-subtitle`).html(InfoDiagram[0].subtitle);
         $(`#diagram-center`).html(InfoDiagram[0].center);
+        onInit();
     }
 
-    $(`button[id^='element-']`).click(function(e) {
+    $(`button[id^='element-']`).mouseover(function(e) {
         removeClassAll();
         selected = e.target.id.substr(-1);
         if(selected == 5){
+            $(`#diagram-subtitle`).html(InfoDiagram[0].subtitle);
             $('.cicle_background').css({'background-image': `url('./img/cicle_background_active.svg')`}); 
         }else{
+            $(`#diagram-subtitle`).html('');
             $('.cicle_background').css({'background-image': `url('./img/cicle_background.svg')`}); 
         }
         $(`#element-${selected}`).addClass("active");
@@ -33,7 +35,7 @@ $(document).ready(function() {
         removeClassSelection();
     });
 
-    $(`a[id^='menu-text-']`).click(function(e) {
+    $(`a[id^='menu-text-']`).mouseover(function(e) {
         removeClassSelection();
         let item = e.target.id.substr(-1);
         $(`#menu-text-${item}`).addClass("active-selected");
@@ -42,8 +44,24 @@ $(document).ready(function() {
         $(`#text-d`).html(dataDiagram[selected-1].steps[item-1].text)
         $(`#img-d`).attr("src",dataDiagram[selected-1].steps[item-1].img);
         //$('#img-d').css({'background-image': `url('${dataDiagram[selected-1].steps[item-1].img}')`}); 
-
     });
+
+    function onInit(){
+        removeClassAll();
+        selected = 1;
+        let item = 1;
+        $(`#element-${selected}`).addClass("active");
+        for (let index = 0; index < dataDiagram[selected-1].steps.length; index++) {
+            $(`#menu-dot-${index+1}`).html(dot);
+            $(`#menu-text-${index+1}`).html(dataDiagram[selected-1].steps[index].name);           
+        }
+        removeClassSelection();
+        $(`#menu-text-${item}`).addClass("active-selected");
+        $(`#menu-dot-${item}`).html(activeDot);
+        $(`#title-d`).html(dataDiagram[selected-1].steps[item-1].name)
+        $(`#text-d`).html(dataDiagram[selected-1].steps[item-1].text)
+        $(`#img-d`).attr("src",dataDiagram[selected-1].steps[item-1].img);
+    }
 
     function removeClassSelection(){
         if(selected != null){
