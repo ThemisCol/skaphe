@@ -63,14 +63,12 @@ $(document).ready(function() {
     }
 
     function loadMenuTextMobile(){
-        $('#cards-carousel').empty();
         for (let imenu = 0; imenu < dataDiagram[selected-1].steps.length; imenu++) {
-            $('.carousel-indicators').append('<li data-target="#carouselIndicators" data-slide-to="'+ imenu + '"></li>');
+            //$('.carousel-indicators').append('<li data-target="#carouselIndicators" data-slide-to="'+ imenu + '"></li>');
             $('.carousel-indicators li:first-child').addClass('active');
             $('#cards-carousel div:first-child').addClass('active');
-            if(imenu == 0){
-                $(`#cards-carousel`).append(`
-                    <div class="carousel-item active">
+            $(`#cards-carousel`).append(`
+                    <div class="carousel-item ${ imenu === 0  ? 'active' : '' }" >
                         <div class="card">
                             <img class="card-img-top" src="${dataDiagram[selected-1].steps[imenu].img}">
                             <div class="card-body">
@@ -80,21 +78,6 @@ $(document).ready(function() {
                         </div>
                     </div>
                 `)
-            }else{
-                $(`#cards-carousel`).append(`
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img class="card-img-top" src="${dataDiagram[selected-1].steps[imenu].img}">
-                            <div class="card-body">
-                            <h5 class="card-title">${dataDiagram[selected-1].steps[imenu].name}</h5>
-                            <p class="card-text">${dataDiagram[selected-1].steps[imenu].text}</p>
-                            </div>
-                        </div>
-                    </div>
-                `)
-            }
-            
-            
         }
     }
       
@@ -127,6 +110,8 @@ $(document).ready(function() {
     }
 
     function removeClassAll(){
+        $('#cards-carousel').empty();
+        //$('.carousel-indicators').empty();
         for (let index = 0; index <= 6; index++) {
             $(`#menu-text-${index+1}`).empty();
             $(`#menu-dot-${index+1}`).empty();
