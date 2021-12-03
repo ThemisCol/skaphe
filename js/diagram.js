@@ -63,24 +63,37 @@ $(document).ready(function() {
     }
 
     function loadMenuTextMobile(){
-        
+        $('#cards-carousel').empty();
         for (let imenu = 0; imenu < dataDiagram[selected-1].steps.length; imenu++) {
             $('.carousel-indicators').append('<li data-target="#carouselIndicators" data-slide-to="'+ imenu + '"></li>');
+            $('.carousel-indicators li:first-child').addClass('active');
+            $('#cards-carousel div:first-child').addClass('active');
             if(imenu == 0){
-                $('.carousel-indicators li:first-child').addClass('active');
-                $('#cards-carousel div:first-child').addClass('active');
-            }
-            $(`#cards-carousel`).append(`
-            <div class="carousel-item">
-                <div class="card">
-                    <img class="card-img-top" src="${dataDiagram[selected-1].steps[imenu].img}">
-                    <div class="card-body">
-                    <h5 class="card-title">${dataDiagram[selected-1].steps[imenu].name}</h5>
-                    <p class="card-text">${dataDiagram[selected-1].steps[imenu].text}</p>
+                $(`#cards-carousel`).append(`
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img class="card-img-top" src="${dataDiagram[selected-1].steps[imenu].img}">
+                            <div class="card-body">
+                            <h5 class="card-title">${dataDiagram[selected-1].steps[imenu].name}</h5>
+                            <p class="card-text">${dataDiagram[selected-1].steps[imenu].text}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            `)
+                `)
+            }else{
+                $(`#cards-carousel`).append(`
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="card-img-top" src="${dataDiagram[selected-1].steps[imenu].img}">
+                            <div class="card-body">
+                            <h5 class="card-title">${dataDiagram[selected-1].steps[imenu].name}</h5>
+                            <p class="card-text">${dataDiagram[selected-1].steps[imenu].text}</p>
+                            </div>
+                        </div>
+                    </div>
+                `)
+            }
+            
             
         }
     }
